@@ -17,6 +17,21 @@ var counter = {
 
 function countLetters(counter, sample_text){
   // FIX ME
+  let strArr = sample_text.trim().toLowerCase().split("");
+  let counterArr = Object.keys(counter);
+  console.log(counterArr);
+  console.log(strArr);
+  if (counterArr[index] === "z") {
+    return;
+  }
+
+  });
+
+
+
+
+  
+
 }
 
 $(document).ready(function(){
