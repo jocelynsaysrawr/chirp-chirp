@@ -17,15 +17,20 @@ var counter = {
 
 function countLetters(counter, sample_text){
   // FIX ME
-  let strArr = sample_text.trim().toLowerCase().split("");
-  let counterArr = Object.keys(counter);
-  console.log(counterArr);
-  console.log(strArr);
-  if (counterArr[index] === "z") {
-    return;
+
+  if (sample_text.length === 0) {
+    return counter;
   }
 
-  });
+  if (sample_text.length > 0) {
+    counter[sample_text.charAt(0).toLowerCase()]++;  
+  } 
+
+  return countLetters(counter, sample_text.slice(1));
+
+  
+
+  
 
 
 
